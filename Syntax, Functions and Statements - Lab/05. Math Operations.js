@@ -24,5 +24,3 @@ function calculate(num1, num2, operator) {
     }
     console.log(`${result}`);
 }
-
-calculate(2, 5, "**");
