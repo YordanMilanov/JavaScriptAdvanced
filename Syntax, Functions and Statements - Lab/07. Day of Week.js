@@ -6,7 +6,7 @@ function DayOfWeek(DayAsString) {
         case `Monday`:
             result = 1;
             break;
-        case `Thusday`:
+        case `Tuesday`:
             result = 2;
             break;
         case `Wednesday`:
@@ -31,5 +31,3 @@ function DayOfWeek(DayAsString) {
 
     console.log(result);
 }
-
-DayOfWeek(`Friday`);
