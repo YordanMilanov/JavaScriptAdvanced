@@ -10,5 +10,3 @@ function printLargestNumber(x, y, z) {
 
     console.log(`The largest number is ${largestNumber}.`);
 }
-
-printLargestNumber(10, 20, 15);
