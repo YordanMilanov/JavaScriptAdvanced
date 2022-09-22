@@ -1,6 +1,4 @@
-function DaysOfMonth(inputMonth, inputYear) {
-    let month = Number(inputMonth);
-    let year = Number(inputYear);
+function DaysOfMonth(month, year) {
 
     let leapYear = false;
     let daysOfMonth = 0;
@@ -55,5 +53,3 @@ function DaysOfMonth(inputMonth, inputYear) {
     console.log(daysOfMonth);
     return;
 }
-
-daysOfMonth(2, 2012);
