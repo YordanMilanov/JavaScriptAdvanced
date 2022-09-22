@@ -11,5 +11,3 @@ function solve (n, m) {
 
     console.log(result);
 }
-
-solve(1, 5);
