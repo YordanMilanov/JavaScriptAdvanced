@@ -1,39 +1,27 @@
 //n - length
 //k - count of last numbers we want to add
-
+//TODO
 function lastK(n, k) {
-    let repeats = k;
+    const arrayLength = n;
+    const repeats = k;
+    let array = [1];
     let currentSum = 0;
-    let arrayToCreate = [1];
+    for (let i = 0; i < n - 1; i++) {
 
-    if (arrayToCreate.length < repeats) {
+        for (let j = i; j > i - k; j--) {
+            if (typeof array[j] !== "number") {
+                continue;
+            }
+        currentSum += array[j]
+        }
+     array[i + 1] = currentSum;   
+     currentSum = 0;
+    }
 
-        for (let i = 0; i < arrayToCreate.length; i++) {
+    let result = `[`;
+    result += array.join(`, `);
+    result += `]`;
+    console.log(result);
+}
 
-            for (let j = i; j > -repeats - i; j--) {
-                if (j >= 0) {
-                    currentSum += arrayToCreate[j];
-                }
-            };
-
-            arrayToCreate[i + 1] = currentSum;
-            currentSum = 0;
-            console.log(arrayToCreate);
-
-            if (arrayToCreate.length < repeats) {
-                break;
-            };
-        };
-
-    } else {
-        for (let i = arrayToCreate.length - repeats; i < arrayToCreate.length; i++) {
-            currentSum += arrayToCreate[i];
-        };
-        arrayToCreate[i + 1] = currentSum;
-        currentSum = 0;
-        console.log(arrayToCreate);
-    };
-
-};
-
-lastK(6, 3);
+lastK(8, 2);
