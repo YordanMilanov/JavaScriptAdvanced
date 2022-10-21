@@ -18,10 +18,7 @@ function lastK(n, k) {
      currentSum = 0;
     }
 
-    let result = `[`;
-    result += array.join(`, `);
-    result += `]`;
-    console.log(result);
+    return(array);
 }
 
 lastK(8, 2);
