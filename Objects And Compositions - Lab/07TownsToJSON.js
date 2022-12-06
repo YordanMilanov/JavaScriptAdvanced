@@ -19,9 +19,9 @@ function solve (arr) {
        result.push(town);
     }
 
-    return JSON.stringify(result)
+    return JSON.stringify(result);
 };
 
 solve(['| Town | Latitude | Longitude |',
 '| Sofia | 42.696552 | 23.32601 |',
-'| Beijing | 39.913818 | 116.363625 |'])
+'| Beijing | 39.913818 | 116.363625 |']);
