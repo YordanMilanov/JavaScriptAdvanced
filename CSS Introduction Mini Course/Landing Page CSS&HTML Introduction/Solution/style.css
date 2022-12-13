@@ -197,3 +197,30 @@ padding-bottom: 30px;
     color: white;
     cursor: pointer;
 }
+
+/* FOOTER */
+footer{
+    background: #50b9e1;
+    color: #5a7c8a;
+    padding: 0px 40px 0px 80px;
+}
+
+footer p{
+    display: inline-block;
+    width: 88%;
+}
+
+footer ul{
+    display: inline-block;
+}
+
+footer ul li a{
+    size: 20px;
+    color: #5a7c8a;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+footer ul li a:hover{
+    color: white;
+}
