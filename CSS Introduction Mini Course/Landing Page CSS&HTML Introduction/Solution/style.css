@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.navigation {
+    padding: 0, 20px;
+}
+
+.navigation p {
+    display: inline-block;
+    font-size: 22px;
+    width: 670px;
+}
+
+.navigation p span {
+    color: #50b9e1;
+}
+
+nav {
+    display: inline-block;
+}
+
+li{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav i {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+ul{
+    padding: 0;
+}
+
+body > header > section.navigation > nav > ul > li:nth-child(5) {
+    padding-right: 5px;
+}
+
+a:hover{
+    color: #50b9e1;
+    cursor: pointer;
+}
+
+/* site-header */
