@@ -155,15 +155,45 @@ padding-bottom: 30px;
     width: 400px;
 }
 
+.camps li:not(:last-child){
+    padding: 18px;
+}
+
 .info div {
     display: inline-block;
 }
 
-.info div p, info div h3{
+.info{
+    border-bottom:2px solid #5a7c8a;
+    padding-bottom: 10px;
+}
+
+.info div p, .info div h3{
     margin: 0;
     padding: 0;
 }
 
 .info div:nth-child(1) {
-    width: 350px;
+    width: 339px;
+}
+
+.info div:nth-child(2) {
+    background: #50b9e1;
+    padding: 10px;
+    color: white;
+    font-size: 22px;
+}
+
+.more-info button{
+    font-size: 18px;
+    color: #50b9e1;
+    border: 2px solid;
+    background: transparent;
+    padding: 5px 10px;
+}
+
+.more-info button:hover {
+    background-color: #50b9e1;
+    color: white;
+    cursor: pointer;
 }
