@@ -2,7 +2,6 @@ function validate() {
     //select input field
     //add change event listener
     document.getElementById('email').addEventListener('change', onChange);
-
     function onChange(ev) {
         //onChange -> validate input
        const email = ev.target.value;
