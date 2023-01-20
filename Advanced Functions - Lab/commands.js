@@ -17,7 +17,7 @@ function createProcessor() {
         console.log(state);
     }
 
-    return{
+    return {
         append,
         removeStart,
         removeEnd,
