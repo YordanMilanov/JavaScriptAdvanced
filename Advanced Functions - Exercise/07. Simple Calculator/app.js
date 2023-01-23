@@ -1,8 +1,8 @@
 function calculator() {
     //these are DOM elements not Numbers that is why we use value below
-    let field1 = null;
-    let field2 = null;
-    let result = null;
+    let field1;
+    let field2;
+    let result;
 
     return {
         init,
