@@ -17,13 +17,13 @@ describe('LookUpChar', () => {
     it('should return incorrect index if index argument is out of bounds', () => {
         assert.equal(lookupChar('test', 5), "Incorrect index");
     })
-    it('should return correct index', () => {
+    it('should return correct the first index', () => {
         assert.equal(lookupChar('test', 3), 't');
     })
-    it('should return correct index', () => {
+    it('should return correct the last index', () => {
         assert.equal(lookupChar('test', 0), 't');
     })
-    it('should return correct index', () => {
+    it('should return correct random index', () => {
         assert.equal(lookupChar('test', 1), 'e');
     })
 })
