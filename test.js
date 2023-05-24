@@ -5,4 +5,22 @@ function isOddOrEven(string) {
     return string.length % 2 === 0 ? 'even' : 'odd';
 }
 
-module.exports = isOddOrEven;
+function lookupChar(string, index) {
+
+    if (typeof(string) !== 'string' || !Number.isInteger(index)) {
+    
+    return undefined;
+    }
+    
+    if (string.length <= index || index < 0) { 
+        return "Incorrect index"; 
+    } 
+    return string.charAt(index); 
+}
+
+
+module.exports = {
+    isOddOrEven,
+    lookupChar
+};
+
