@@ -1,4 +1,7 @@
 function validate() {
+
+    //TODO
+    
     //patterns
     // const wordPattern = /
 
