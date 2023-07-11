@@ -20,9 +20,9 @@ function extensibleObject() {
             }
         },
     };
-
     return obj;
-    }
+};
+
     const myObj = extensibleObject();
 
     const template = {
