@@ -39,6 +39,8 @@
 
 })();
 
+
+//tests
 const arr = [1,2,3,4,5];
 const number = arr.average();
 console.log(number);
