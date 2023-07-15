@@ -3,6 +3,8 @@ function solve() {
     const titleInput = document.getElementById('title');
     const messageInput = document.getElementById('message');
     const list = document.getElementById('list');
+    const deleted = document.querySelector('.delete-list');
+    const sent = document.querySelector('.sent-list');
 
     //1. create mail process
     //add listener to add to list button
@@ -39,16 +41,48 @@ function solve() {
             <button type="submit" id="send">Send</button>
             <button type="submit" id="delete">Delete</button>
         </div>`
+
+        element.querySelector('#send').addEventListener('click', sendMail);
+        element.querySelector('#delete').addEventListener('click', deleteMail);
         //if everything is filled then add the message to the message element
+
         list.appendChild(element);
 
         //after successful adding reset the input fields
         resetInput();
-    }
 
-    //2. send mail process
-    // - read data from closure
-    // - create
+        function sendMail() {
+            const sentMailElement = document.createElement('li');
+            sentMailElement.innerHTML = `<span>To: ${name}</span>
+            <span>Title: ${title}</span>
+            <div class="btn">
+                <button type="submit" class="delete">Delete</button>
+            </div>`
+
+            sentMailElement.querySelector('.delete').addEventListener('click', () => {
+                const deletedMailElement = document.createElement('li');
+                deletedMailElement.innerHTML = 
+                `<span>To: ${name}</span>
+                <span>Title: ${title}</span>`
+    
+                deleted.appendChild(deletedMailElement);
+                sentMailElement.remove();
+            });
+
+            sent.appendChild(sentMailElement);
+            element.remove();
+        }
+
+        function deleteMail() {
+            const deletedMailElement = document.createElement('li');
+            deletedMailElement.innerHTML = 
+            `<span>To: ${name}</span>
+            <span>Title: ${title}</span>`
+
+            deleted.appendChild(deletedMailElement);
+            element.remove();
+        }
+    }
 
     function resetInput() {
         nameInput.value = '';
