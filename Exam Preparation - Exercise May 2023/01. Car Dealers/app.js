@@ -87,6 +87,7 @@ function solve() {
 
      //inner callBacks
      editBtn.addEventListener('click', (e) => {
+      e.preventDefault();
       make.value = makeInputValue;
       model.value = modelInputValue;
       year.value = yearInputValue;
@@ -98,6 +99,7 @@ function solve() {
      });
 
      sellBtn.addEventListener('click', (e) => {
+      e.preventDefault();
       liEl = document.createElement('li');
       liEl.classList.add('each-list');
 
@@ -132,6 +134,4 @@ function solve() {
     originalCost.value = "";
     sellingPrice.value = "";
   }
-
-  console.log(editButton)
 }
