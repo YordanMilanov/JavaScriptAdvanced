@@ -1,7 +1,6 @@
 {
   "name": "javascriptadvanced",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "ansi-colors": "^4.1.1",
@@ -103,5 +102,6 @@
   "bugs": {
     "url": "https://github.com/YordanMilanov/JavaScriptAdvanced/issues"
   },
-  "homepage": "https://github.com/YordanMilanov/JavaScriptAdvanced#readme"
+  "homepage": "https://github.com/YordanMilanov/JavaScriptAdvanced#readme",
+  "description": ""
 }
